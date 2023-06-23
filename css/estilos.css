@@ -1,40 +1,41 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "eurostile", sans-serif;
-    
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: normal;  
 }
 
 a{
     text-decoration: none;
-    font-size: 17px;
+    font-size: 13px;
     color: black;
 }
 
 h1{
-    font-size: 30px;
+    font-size: 23px;
+    
 }
 
 h2{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 h3{
-    font-size: 16px;
+    font-size: 13px;
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 17%;
-    padding-left: 17%;
-    margin-top: 20px;
+    padding-right: 18%;
+    padding-left: 18%;
+    margin-top: 10px;
 }
 
 header img{
-    width: 70px;
-    height: 55px;
+    width: 45px;
+    height: 35px;
     margin: 20px;
     margin-left: 30px;
 }
@@ -52,24 +53,25 @@ header nav a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .presentacion h1{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 45px
 }
 
 .avatar{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 70px;
     
 }
 
 .avatar img{
-    width: 15%;
-    height: 15%;
+    width: 8%;
+    height: 8%;
 }
 
 .computadora{
@@ -98,14 +100,18 @@ header nav a{
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    padding-top: 100px;
+    padding-top: 120px;
     color: white;
     
 }
 
+.contenidoIntroduccion h1{
+    font-size: x-large;
+}
+
 .contenidoIntroduccion div{
-    margin-top: 50px;
-    width: 50%;
+    margin-top: 30px;
+    width: 40%;
     text-align: center;
     padding-bottom: 200px;
 }
@@ -195,4 +201,27 @@ header nav a{
 .skills img{
     width: 50px;
     height: 50px;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.trabajosRecientes{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: 50px 80px;
+    grid-template-areas: "textoTrabajos textoTrabajos" "calculadoraPersonal webEmpresarial";
+}
+
+.textoTrabajos{
+    grid-area: textoTrabajos;
+}
+
+.calculadoraPersonal{
+    grid-area: calculadoraPersonal;
+}
+
+.webEmpresarial{
+    grid-area: webEmpresarial;
 }
