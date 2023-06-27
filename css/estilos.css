@@ -122,8 +122,11 @@ header nav a{
 }
 
 .skills{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 368px);
+    grid-template-rows: auto;
+    grid-template-areas: "versionado lenguajes frameworks";
+    text-align: center;  
     width: 80%;
     margin: -100px;
     background-color: white;
@@ -137,11 +140,11 @@ header nav a{
 
 .versionado{
     border-right: 1px solid rgb(224, 221, 221);
+    grid-area: versionado;
     padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-right: 150px;
 }
 
 .lenguajes{
@@ -149,15 +152,16 @@ header nav a{
     flex-direction: column;
     align-items: center;
     padding: 50px;
+    grid-area: lenguajes;
 
 }
 .frameworks{
     border-left: 1px solid rgb(224, 221, 221);
     padding: 50px;
-    padding-left: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    grid-area: frameworks;
 }
 
 .versionado div{
@@ -209,19 +213,36 @@ header nav a{
 
 .trabajosRecientes{
     display: grid;
-    grid-template-columns: repeat(2, 500px);
-    grid-template-rows: 50px 80px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto auto;
     grid-template-areas: "textoTrabajos textoTrabajos" "calculadoraPersonal webEmpresarial";
+    text-align: center;  
+    margin-bottom: 70px;  
 }
 
 .textoTrabajos{
     grid-area: textoTrabajos;
+    margin-bottom: 55px;
 }
 
 .calculadoraPersonal{
     grid-area: calculadoraPersonal;
+    margin-right: 50px;
+    border: 3px solid gray;
+    border-radius: 20px;
+
 }
 
 .webEmpresarial{
     grid-area: webEmpresarial;
+    margin-left: 50px;
+    border: 3px solid gray;
+    border-radius: 20px;
+
+}
+
+.trabajosRecientes img{
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
 }
